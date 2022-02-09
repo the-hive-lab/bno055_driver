@@ -53,7 +53,7 @@ class ReadIMU(Node):
         """
         imuMsg = Imu()
         imuMsg.header.stamp = self.get_clock().now().to_msg()
-        imuMsg.header.frame_id = 'base_link'
+        imuMsg.header.frame_id = 'imu_link'
 
         valid_values = False
 
