@@ -31,16 +31,18 @@ class ReadIMU(Node):
 
         # Declaring parameters
         self.declare_parameter('imu_topic', 'default_imu_topic')
+        self.declare_parameter('imu_rate', 50.0)
 
         # Reading in parameters for node, by default the parameters can be found
         # under config/params.yaml
         self.imu_topic = self.get_parameter('imu_topic').get_parameter_value().string_value
+        self.rate = self.get_parameter('imu_rate').get_parameter_value().double_value
 
         # Create topic publishers for IMU        
         self.imu_output = self.create_publisher(Imu, self.imu_topic, 1)
 
-        # Create timer for IMU publisher.
-        self.rate = 100  # 100 Hz
+        # # Create timer for IMU publisher.
+        # self.rate = 100  # 100 Hz
         self.timer_period = 1.0 / self.rate
         self.timer = self.create_timer(self.timer_period, self._publish_imu_msg)
 

@@ -1,3 +1,4 @@
 bno055_driver:
   ros__parameters:
     imu_topic: "example/imu"
+    imu_rate: 5.0
