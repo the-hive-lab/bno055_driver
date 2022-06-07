@@ -30,7 +30,7 @@ class ReadIMU(Node):
         self.sensor = adafruit_bno055.BNO055_I2C(self.i2c)
 
         # Declaring parameters
-        self.declare_parameter('imu_topic', 'default_imu_topic')
+        self.declare_parameter('imu_topic', 'imu')
         self.declare_parameter('imu_rate', 50.0)
 
         # Reading in parameters for node, by default the parameters can be found
