@@ -6,6 +6,6 @@ To connect and get started follow Adafruit guide:
 https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython
 
 This package requires you to install the following Python library:
-```v
+```shell
 sudo pip3 install adafruit-circuitpython-bno055
 ```
