@@ -21,7 +21,7 @@ Lauch files:
 ros2 launch bno055_driver imu.launch.py
 ```
 
-Example file launch:
+Example launch file:
 ```python
 # Standard library imports
 from os.path import join
@@ -48,4 +48,4 @@ def generate_launch_description():
     ])
 
 ```
-Thanks [`Patrick Marshall'](https://github.com/marshallpt) :)
+Thanks [Patrick Marshall](https://github.com/marshallpt) :)
