@@ -16,7 +16,7 @@ Run ROS2 node:
 ros2 run bno055_driver bno055_driver
 ```
 
-Lauch files:
+Launch files:
 ```shell
 ros2 launch bno055_driver imu.launch.py
 ```
